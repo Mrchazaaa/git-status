@@ -11,7 +11,7 @@ app.listen(port, () => {
 })
 
 app.post('/handle',(request,response) => {
-    var data = JSON.parse(request.body);
+    var data = request.body;
     console.log(data.pusher);
     response.status(200).end() // Responding is important
 });
