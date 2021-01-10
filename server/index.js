@@ -11,8 +11,6 @@ app.listen(port, () => {
 })
 
 app.post('/handle',(request,response) => {
-    //code to perform particular action.
-    //To access POST variable use req.body()methods.
     var data = JSON.parse(request.body);
     console.log(data.pusher);
     response.status(200).end() // Responding is important
