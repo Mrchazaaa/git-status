@@ -8,6 +8,8 @@ const RED = "#cc3232";
 function Failure() {
     const { message } = useParams();
 
+    console.log("n word");
+
     const [gifMessage, setGifMessage] = React.useState(message);
 
     return (

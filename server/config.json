@@ -1,0 +1,9 @@
+{
+    "sites": [
+        "https://charliehowlett.com/",
+        "https://www.reddit.com/r/yourmomshousepodcast/",
+        "https://www.google.com/search?q=cheese&oq=cheese&aqs=chrome.0.0i355i433i512j46i433i512j0i512j0i433i512j46i433i512j69i60l3.690j0j4&sourceid=chrome&ie=UTF-8"
+    ],
+    "siteDelayMs": 60000,
+    "statusDelayMs": 10000
+}
