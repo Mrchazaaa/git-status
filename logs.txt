@@ -1,0 +1,763 @@
+Sat Nov 20 2021 14:40:12 GMT+0000 (Greenwich Mean Time) // App listening at http://localhost:3000
+Sat Nov 20 2021 14:40:26 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:40:26 GMT+0000 (Greenwich Mean Time) // polling for build update
+Sat Nov 20 2021 14:40:33 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:40:37 GMT+0000 (Greenwich Mean Time) // querying build status produced error:
+Sat Nov 20 2021 14:40:37 GMT+0000 (Greenwich Mean Time) // /usr/lib/python3/dist-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.26.7) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+
+Sat Nov 20 2021 14:40:37 GMT+0000 (Greenwich Mean Time) // querying build status produced output:
+Sat Nov 20 2021 14:40:37 GMT+0000 (Greenwich Mean Time) // [
+  {
+    "buildNumber": "v21.3.0-ci-onpremise.73.+integration-tests-deploy.54563",
+    "buildNumberRevision": 1,
+    "controller": null,
+    "definition": {
+      "createdDate": null,
+      "drafts": [],
+      "id": 70,
+      "name": "Nightly Core On-Premise",
+      "path": "\\Core",
+      "project": {
+        "abbreviation": null,
+        "defaultTeamImageUrl": null,
+        "description": "This is the core MindLink Product Team project.",
+        "id": "e0a7dad7-a82d-4373-a48d-25e65108dc06",
+        "lastUpdateTime": "2020-08-14T16:11:10.53Z",
+        "name": "MindLink",
+        "revision": 176934,
+        "state": "wellFormed",
+        "url": "https://dev.azure.com/MindLinkSoft/_apis/projects/e0a7dad7-a82d-4373-a48d-25e65108dc06",
+        "visibility": "private"
+      },
+      "queueStatus": "enabled",
+      "revision": 2,
+      "type": "build",
+      "uri": "vstfs:///Build/Definition/70",
+      "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/Definitions/70?revision=2"
+    },
+    "deleted": null,
+    "deletedBy": null,
+    "deletedDate": null,
+    "deletedReason": null,
+    "demands": null,
+    "finishTime": "2021-11-19T22:09:07.401149+00:00",
+    "id": 54563,
+    "keepForever": false,
+    "lastChangedBy": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate": "2021-11-19T22:09:07.683000+00:00",
+    "logs": {
+      "id": 0,
+      "type": "Container",
+      "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/builds/54563/logs"
+    },
+    "orchestrationPlan": {
+      "orchestrationType": null,
+      "planId": "6c023c4f-9999-44a0-9727-63dd2dd9802b"
+    },
+    "parameters": null,
+    "plans": [
+      {
+        "orchestrationType": null,
+        "planId": "6c023c4f-9999-44a0-9727-63dd2dd9802b"
+      }
+    ],
+    "priority": "normal",
+    "project": {
+      "abbreviation": null,
+      "defaultTeamImageUrl": null,
+      "description": "This is the core MindLink Product Team project.",
+      "id": "e0a7dad7-a82d-4373-a48d-25e65108dc06",
+      "lastUpdateTime": "2020-08-14T16:11:10.53Z",
+      "name": "MindLink",
+      "revision": 176934,
+      "state": "wellFormed",
+      "url": "https://dev.azure.com/MindLinkSoft/_apis/projects/e0a7dad7-a82d-4373-a48d-25e65108dc06",
+      "visibility": "private"
+    },
+    "properties": {},
+    "quality": null,
+    "queue": {
+      "id": 13,
+      "name": "Azure Pipelines",
+      "pool": {
+        "id": 10,
+        "isHosted": true,
+        "name": "Azure Pipelines"
+      },
+      "url": null
+    },
+    "queueOptions": null,
+    "queuePosition": null,
+    "queueTime": "2021-11-19T21:00:02.824627+00:00",
+    "reason": "schedule",
+    "repository": {
+      "checkoutSubmodules": false,
+      "clean": null,
+      "defaultBranch": null,
+      "id": "5ac09d03-8124-481a-bee7-625d0f4e96d9",
+      "name": "Core",
+      "properties": null,
+      "rootFolder": null,
+      "type": "TfsGit",
+      "url": "https://dev.azure.com/MindLinkSoft/MindLink/_git/Core"
+    },
+    "requestedBy": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "requestedFor": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "result": "failed",
+    "retainedByRelease": false,
+    "sourceBranch": "refs/heads/develop",
+    "sourceVersion": "67d7649b7a2911c06514273ffb1e8a9773e263f6",
+    "startTime": "2021-11-19T21:00:20.907466+00:00",
+    "status": "completed",
+    "tags": [],
+    "triggerInfo": {
+      "scheduleName": "Nightly deploy"
+    },
+    "triggeredByBuild": null,
+    "uri": "vstfs:///Build/Build/54563",
+    "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/Builds/54563",
+    "validationResults": []
+  }
+]
+
+Sat Nov 20 2021 14:40:37 GMT+0000 (Greenwich Mean Time) // Microsoft.VisualStudio.Services.TFS
+Sat Nov 20 2021 14:40:37 GMT+0000 (Greenwich Mean Time) // failed
+Sat Nov 20 2021 14:40:37 GMT+0000 (Greenwich Mean Time) // v21.3.0-ci-onpremise.73.+integration-tests-deploy.54563
+Sat Nov 20 2021 14:40:41 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:40:41 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:40:41 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:40:41 GMT+0000 (Greenwich Mean Time) // displaying build status site http://localhost:3000/failure/Nightly Core On-Premise - Microsoft.VisualStudio.Services.TFS - 21:00
+Sat Nov 20 2021 14:41:40 GMT+0000 (Greenwich Mean Time) // polling for build update
+Sat Nov 20 2021 14:41:40 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:41:46 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // querying build status produced error:
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // /usr/lib/python3/dist-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.26.7) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // querying build status produced output:
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // [
+  {
+    "buildNumber": "v21.3.0-ci-onpremise.73.+integration-tests-deploy.54563",
+    "buildNumberRevision": 1,
+    "controller": null,
+    "definition": {
+      "createdDate": null,
+      "drafts": [],
+      "id": 70,
+      "name": "Nightly Core On-Premise",
+      "path": "\\Core",
+      "project": {
+        "abbreviation": null,
+        "defaultTeamImageUrl": null,
+        "description": "This is the core MindLink Product Team project.",
+        "id": "e0a7dad7-a82d-4373-a48d-25e65108dc06",
+        "lastUpdateTime": "2020-08-14T16:11:10.53Z",
+        "name": "MindLink",
+        "revision": 176934,
+        "state": "wellFormed",
+        "url": "https://dev.azure.com/MindLinkSoft/_apis/projects/e0a7dad7-a82d-4373-a48d-25e65108dc06",
+        "visibility": "private"
+      },
+      "queueStatus": "enabled",
+      "revision": 2,
+      "type": "build",
+      "uri": "vstfs:///Build/Definition/70",
+      "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/Definitions/70?revision=2"
+    },
+    "deleted": null,
+    "deletedBy": null,
+    "deletedDate": null,
+    "deletedReason": null,
+    "demands": null,
+    "finishTime": "2021-11-19T22:09:07.401149+00:00",
+    "id": 54563,
+    "keepForever": false,
+    "lastChangedBy": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate": "2021-11-19T22:09:07.683000+00:00",
+    "logs": {
+      "id": 0,
+      "type": "Container",
+      "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/builds/54563/logs"
+    },
+    "orchestrationPlan": {
+      "orchestrationType": null,
+      "planId": "6c023c4f-9999-44a0-9727-63dd2dd9802b"
+    },
+    "parameters": null,
+    "plans": [
+      {
+        "orchestrationType": null,
+        "planId": "6c023c4f-9999-44a0-9727-63dd2dd9802b"
+      }
+    ],
+    "priority": "normal",
+    "project": {
+      "abbreviation": null,
+      "defaultTeamImageUrl": null,
+      "description": "This is the core MindLink Product Team project.",
+      "id": "e0a7dad7-a82d-4373-a48d-25e65108dc06",
+      "lastUpdateTime": "2020-08-14T16:11:10.53Z",
+      "name": "MindLink",
+      "revision": 176934,
+      "state": "wellFormed",
+      "url": "https://dev.azure.com/MindLinkSoft/_apis/projects/e0a7dad7-a82d-4373-a48d-25e65108dc06",
+      "visibility": "private"
+    },
+    "properties": {},
+    "quality": null,
+    "queue": {
+      "id": 13,
+      "name": "Azure Pipelines",
+      "pool": {
+        "id": 10,
+        "isHosted": true,
+        "name": "Azure Pipelines"
+      },
+      "url": null
+    },
+    "queueOptions": null,
+    "queuePosition": null,
+    "queueTime": "2021-11-19T21:00:02.824627+00:00",
+    "reason": "schedule",
+    "repository": {
+      "checkoutSubmodules": false,
+      "clean": null,
+      "defaultBranch": null,
+      "id": "5ac09d03-8124-481a-bee7-625d0f4e96d9",
+      "name": "Core",
+      "properties": null,
+      "rootFolder": null,
+      "type": "TfsGit",
+      "url": "https://dev.azure.com/MindLinkSoft/MindLink/_git/Core"
+    },
+    "requestedBy": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "requestedFor": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "result": "failed",
+    "retainedByRelease": false,
+    "sourceBranch": "refs/heads/develop",
+    "sourceVersion": "67d7649b7a2911c06514273ffb1e8a9773e263f6",
+    "startTime": "2021-11-19T21:00:20.907466+00:00",
+    "status": "completed",
+    "tags": [],
+    "triggerInfo": {
+      "scheduleName": "Nightly deploy"
+    },
+    "triggeredByBuild": null,
+    "uri": "vstfs:///Build/Build/54563",
+    "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/Builds/54563",
+    "validationResults": []
+  }
+]
+
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // Microsoft.VisualStudio.Services.TFS
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // failed
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // v21.3.0-ci-onpremise.73.+integration-tests-deploy.54563
+Sat Nov 20 2021 14:41:48 GMT+0000 (Greenwich Mean Time) // scheduling build status poll
+Sat Nov 20 2021 14:41:55 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:42:18 GMT+0000 (Greenwich Mean Time) // polling for build update
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // querying build status produced error:
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // /usr/lib/python3/dist-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.26.7) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // querying build status produced output:
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // [
+  {
+    "buildNumber": "v21.3.0-ci-onpremise.73.+integration-tests-deploy.54563",
+    "buildNumberRevision": 1,
+    "controller": null,
+    "definition": {
+      "createdDate": null,
+      "drafts": [],
+      "id": 70,
+      "name": "Nightly Core On-Premise",
+      "path": "\\Core",
+      "project": {
+        "abbreviation": null,
+        "defaultTeamImageUrl": null,
+        "description": "This is the core MindLink Product Team project.",
+        "id": "e0a7dad7-a82d-4373-a48d-25e65108dc06",
+        "lastUpdateTime": "2020-08-14T16:11:10.53Z",
+        "name": "MindLink",
+        "revision": 176934,
+        "state": "wellFormed",
+        "url": "https://dev.azure.com/MindLinkSoft/_apis/projects/e0a7dad7-a82d-4373-a48d-25e65108dc06",
+        "visibility": "private"
+      },
+      "queueStatus": "enabled",
+      "revision": 2,
+      "type": "build",
+      "uri": "vstfs:///Build/Definition/70",
+      "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/Definitions/70?revision=2"
+    },
+    "deleted": null,
+    "deletedBy": null,
+    "deletedDate": null,
+    "deletedReason": null,
+    "demands": null,
+    "finishTime": "2021-11-19T22:09:07.401149+00:00",
+    "id": 54563,
+    "keepForever": false,
+    "lastChangedBy": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate": "2021-11-19T22:09:07.683000+00:00",
+    "logs": {
+      "id": 0,
+      "type": "Container",
+      "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/builds/54563/logs"
+    },
+    "orchestrationPlan": {
+      "orchestrationType": null,
+      "planId": "6c023c4f-9999-44a0-9727-63dd2dd9802b"
+    },
+    "parameters": null,
+    "plans": [
+      {
+        "orchestrationType": null,
+        "planId": "6c023c4f-9999-44a0-9727-63dd2dd9802b"
+      }
+    ],
+    "priority": "normal",
+    "project": {
+      "abbreviation": null,
+      "defaultTeamImageUrl": null,
+      "description": "This is the core MindLink Product Team project.",
+      "id": "e0a7dad7-a82d-4373-a48d-25e65108dc06",
+      "lastUpdateTime": "2020-08-14T16:11:10.53Z",
+      "name": "MindLink",
+      "revision": 176934,
+      "state": "wellFormed",
+      "url": "https://dev.azure.com/MindLinkSoft/_apis/projects/e0a7dad7-a82d-4373-a48d-25e65108dc06",
+      "visibility": "private"
+    },
+    "properties": {},
+    "quality": null,
+    "queue": {
+      "id": 13,
+      "name": "Azure Pipelines",
+      "pool": {
+        "id": 10,
+        "isHosted": true,
+        "name": "Azure Pipelines"
+      },
+      "url": null
+    },
+    "queueOptions": null,
+    "queuePosition": null,
+    "queueTime": "2021-11-19T21:00:02.824627+00:00",
+    "reason": "schedule",
+    "repository": {
+      "checkoutSubmodules": false,
+      "clean": null,
+      "defaultBranch": null,
+      "id": "5ac09d03-8124-481a-bee7-625d0f4e96d9",
+      "name": "Core",
+      "properties": null,
+      "rootFolder": null,
+      "type": "TfsGit",
+      "url": "https://dev.azure.com/MindLinkSoft/MindLink/_git/Core"
+    },
+    "requestedBy": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "requestedFor": {
+      "descriptor": "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "directoryAlias": null,
+      "displayName": "Microsoft.VisualStudio.Services.TFS",
+      "id": "00000002-0000-8888-8000-000000000000",
+      "imageUrl": "https://dev.azure.com/MindLinkSoft/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "inactive": null,
+      "isAadIdentity": null,
+      "isContainer": null,
+      "isDeletedInOrigin": null,
+      "profileUrl": null,
+      "uniqueName": "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url": "https://spsprodweu2.vssps.visualstudio.com/A55a37291-73d5-4108-8646-669699b6dd49/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "result": "failed",
+    "retainedByRelease": false,
+    "sourceBranch": "refs/heads/develop",
+    "sourceVersion": "67d7649b7a2911c06514273ffb1e8a9773e263f6",
+    "startTime": "2021-11-19T21:00:20.907466+00:00",
+    "status": "completed",
+    "tags": [],
+    "triggerInfo": {
+      "scheduleName": "Nightly deploy"
+    },
+    "triggeredByBuild": null,
+    "uri": "vstfs:///Build/Build/54563",
+    "url": "https://dev.azure.com/MindLinkSoft/e0a7dad7-a82d-4373-a48d-25e65108dc06/_apis/build/Builds/54563",
+    "validationResults": []
+  }
+]
+
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // Microsoft.VisualStudio.Services.TFS
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // failed
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // v21.3.0-ci-onpremise.73.+integration-tests-deploy.54563
+Sat Nov 20 2021 14:42:36 GMT+0000 (Greenwich Mean Time) // scheduling build status poll
+Sat Nov 20 2021 14:42:55 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:42:55 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:43:09 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:43:16 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:44:16 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:44:16 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:44:21 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:44:27 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:44:27 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:44:27 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:45:27 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:45:27 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:45:40 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:45:45 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:45:45 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:45:45 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:46:45 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:46:45 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:46:50 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:46:56 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:46:56 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:46:56 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:47:56 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:47:56 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:48:09 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:48:14 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:48:14 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:48:14 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:49:14 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:49:14 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:49:19 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:49:25 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:49:25 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:49:25 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:50:25 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:50:25 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:50:38 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:50:43 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:50:43 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:50:43 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:51:43 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:51:43 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:51:48 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:51:54 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:51:54 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:51:54 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:52:54 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:52:54 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:53:07 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:53:12 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:53:12 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:53:12 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:54:12 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:54:12 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:54:17 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:54:23 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:54:23 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:54:23 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:55:23 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:55:23 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:55:37 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:55:42 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:55:42 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:55:42 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:56:42 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:56:42 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:56:47 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:56:59 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:56:59 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:56:59 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:57:59 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:57:59 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:58:12 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:58:17 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:58:17 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:58:17 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 14:59:17 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 14:59:17 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:59:22 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:59:34 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 14:59:34 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 14:59:34 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:00:34 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:00:34 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:00:47 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:00:52 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:00:52 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:00:52 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:01:52 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:01:52 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:01:57 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:02:03 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:02:03 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:02:03 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:03:03 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:03:03 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:03:16 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:03:21 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:03:21 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:03:21 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:04:21 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:04:21 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:04:26 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:04:39 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:04:39 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:04:39 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:05:39 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:05:39 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:05:51 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:05:56 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:05:56 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:05:56 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:06:56 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:06:56 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:07:24 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:07:29 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:07:29 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:07:29 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:08:29 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:08:29 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:08:42 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:08:48 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:08:48 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:08:48 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:09:48 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:09:48 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:09:53 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:09:59 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:09:59 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:09:59 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:10:59 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:10:59 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:11:12 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:11:17 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:11:17 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:11:17 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:12:17 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:12:17 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:12:22 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:12:36 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:12:36 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:12:36 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:13:36 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:13:36 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:13:49 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:13:54 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:13:55 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:13:55 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:14:55 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:14:55 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:15:00 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:15:06 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:15:06 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:15:06 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:16:06 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:16:06 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:16:19 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:16:24 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:16:24 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:16:24 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:17:24 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:17:24 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:17:29 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:17:35 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:17:35 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:17:35 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:18:35 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:18:35 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:18:48 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:18:53 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:18:53 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:18:53 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:19:53 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:19:53 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:19:58 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:20:04 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:20:04 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:20:04 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:21:04 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:21:04 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:21:16 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:21:21 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:21:21 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:21:21 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:22:21 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:22:21 GMT+0000 (Greenwich Mean Time) // displaying regular site https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:22:26 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:22:32 GMT+0000 (Greenwich Mean Time) // error visiting https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:22:32 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="truste-consent-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:22:32 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google
+Sat Nov 20 2021 15:23:32 GMT+0000 (Greenwich Mean Time) // scheduling regular site loop
+Sat Nov 20 2021 15:23:32 GMT+0000 (Greenwich Mean Time) // displaying regular site https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:23:45 GMT+0000 (Greenwich Mean Time) // performing additional setup for https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:23:50 GMT+0000 (Greenwich Mean Time) // error visiting https://www.bbc.co.uk/news/england/london
+Sat Nov 20 2021 15:23:50 GMT+0000 (Greenwich Mean Time) // NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="bbccookies-continue-button"]"}
+  (Session info: chrome=92.0.4515.98)
+Sat Nov 20 2021 15:23:50 GMT+0000 (Greenwich Mean Time) // finished additional setup for https://www.bbc.co.uk/news/england/london
+Already up to date.
+up to date in 32221.63s
+
+> git-status@0.1.0 build /home/pi/workspace/git-status/client
+> react-scripts build
+
+Failed to compile.
+
+EACCES: permission denied, rmdir '/home/pi/workspace/git-status/client/build/static/css'
+
+
+up to date in 3.825s
+Already up to date.
+up to date in 1407.693s
+
+> git-status@0.1.0 build /home/pi/workspace/git-status/client
+> react-scripts build
+
+Failed to compile.
+
+EACCES: permission denied, rmdir '/home/pi/workspace/git-status/client/build/static/css'
+
+
+up to date in 3.807s
+Already up to date.
+up to date in 31145.337s
+
+> git-status@0.1.0 build /home/pi/workspace/git-status/client
+> react-scripts build
+
+Failed to compile.
+
+EACCES: permission denied, rmdir '/home/pi/workspace/git-status/client/build/static/css'
+
+
+up to date in 3.754s

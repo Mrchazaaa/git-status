@@ -42,9 +42,9 @@ App.listen(Port, async () => {
   log(`App listening at http://localhost:${Port}`);
 
   let options = new Options();
-//   options.addArguments("--start-fullscreen");
+  options.addArguments("--start-fullscreen");
   options.excludeSwitches("enable-automation");
-//   options.addArguments("load-extension=/home/mrchazaaa/.config/google-chrome/Profile\ 1/Extensions/gighmmpiobklfepjocnamgkkbiglidom/4.40.0_0");
+  options.addArguments("load-extension=/home/pi/.config/chromium/Default/Extensions/gighmmpiobklfepjocnamgkkbiglidom/4.40.0_0");
 
   let driver = await new Builder()
     .forBrowser("chrome")
@@ -82,7 +82,7 @@ async function pollForBuildUpdate(driver) {
 
   buildStatus = await getBuildStatus(driver);
 
-  if (buildStatus != BUILD_STATUS_DONT_DISPLAY) {
+  if (buildStatus != BUILD_STATUS_DONT_DISPLAY && buildStatus.urlToVisit) {
     while(!regularSiteTimer) {
         await snooze(500);
     }
@@ -96,6 +96,7 @@ async function pollForBuildUpdate(driver) {
       scheduleRegularSites(driver, 0);
     }, BuildStatusRefreshRateMs);
   } else {
+    log("scheduling build status poll");
     regularSiteTimer = setTimeout(async () => {
       pollForBuildUpdate(driver);
     }, BuildStatusPollRateMs);
@@ -107,10 +108,12 @@ async function getBuildStatus() {
   const { stdout, stderr} = await Exec("az pipelines build list --top 1");
 
   if (stderr) {
-    log("querying build status error");
+    log("querying build status produced error:");
     log(stderr);
   }
   if (stdout) {
+    log("querying build status produced output:");
+    log(stdout);
     let buildStatus = JSON.parse(stdout)[0];
     let result = buildStatus.result;
     let buildNumber = buildStatus.buildNumber;
