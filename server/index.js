@@ -2,8 +2,7 @@ const util = require("util");
 const path = require("path");
 const {
   Builder,
-  By,
-  Actions
+  By
 } = require("selenium-webdriver");
 const { Options } = require("selenium-webdriver/chrome");
 const Path = require("path");
@@ -51,10 +50,9 @@ App.listen(Port, async () => {
     .setChromeOptions(options)
     .build();
 
-//   await sleep(3000);
-
-//   let action = new Actions(driver);
-//   await action.keyDown(Keys.CONTROL).sendKeys(Keys.TAB).perform();
+  await driver.sleep(1000);
+  let handles = await driver.getAllWindowHandles();
+  await driver.switchTo().window(handles[0]);
 
   scheduleRegularSites(driver, 0);
   pollForBuildUpdate(driver);
