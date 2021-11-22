@@ -141,19 +141,21 @@ async function performSiteSetup(url, driver) {
 
   let handles = await driver.getAllWindowHandles();
   if (handles.length > 1) {
+    await driver.switchTo().window(handles[1]);
+    await driver.close();
     await driver.switchTo().window(handles[0]);
   }
 
   try {
-    switch (url) {
-      case "https://weather.com/en-GB/weather/today/l/51.49,-0.07?par=google":
-          await driver.sleep(5000);
-          await driver.findElement(By.id("truste-consent-button")).click();
-        break;
-      case "https://www.bbc.co.uk/news/england/london":
-          await driver.sleep(5000);
-          await driver.findElement(By.id("bbccookies-continue-button")).click();
-        break;
+    if (url.includes("https://weather.com/")) {
+      await driver.sleep(5000);
+      await driver.findElement(By.id("truste-consent-button")).click();
+      return;
+    }
+    if (url.includes("https://www.bbc.co.uk/news/england/london")) {
+      await driver.sleep(5000);
+      await driver.findElement(By.id("bbccookies-continue-button")).click();
+      return;
     }
   } catch(e) {
       log(`error visiting ${url}`);
