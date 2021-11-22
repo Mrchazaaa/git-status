@@ -50,10 +50,6 @@ App.listen(Port, async () => {
     .setChromeOptions(options)
     .build();
 
-  await driver.sleep(1000);
-  let handles = await driver.getAllWindowHandles();
-  await driver.switchTo().window(handles[0]);
-
   scheduleRegularSites(driver, 0);
   pollForBuildUpdate(driver);
 });
@@ -142,6 +138,11 @@ async function getBuildStatus() {
 
 async function performSiteSetup(url, driver) {
   log(`performing additional setup for ${url}`);
+
+  let handles = await driver.getAllWindowHandles();
+  if (handles.length > 1) {
+    await driver.switchTo().window(handles[0]);
+  }
 
   try {
     switch (url) {
